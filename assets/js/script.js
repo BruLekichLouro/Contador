@@ -1,13 +1,15 @@
 let count = 0;
 
-const CURRENT_NUMBER = document.getElementById('currentNumber');
-
 function increment() {
 	count++;
-	CURRENT_NUMBER.innerHTML = count;
+	setCurrentNumber(count);
 }
 
 function decrement() {
 	count--;
-	CURRENT_NUMBER.innerHTML = count;
+	setCurrentNumber(count);
+}
+
+function setCurrentNumber(value){
+    document.getElementById('currentNumber').innerHTML= value;
 }
